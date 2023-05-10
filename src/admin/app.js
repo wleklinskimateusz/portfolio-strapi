@@ -29,22 +29,4 @@ export default {
       // 'zh',
     ],
   },
-  bootstrap(app) {
-    app.injectContentManagerComponent("listView", "actions", {
-      name: "DraftFilterButton",
-      Component: () => <div>Hello in Draft Filter</div>,
-    });
-    app.injectContentManagerComponent("editView", "right-links", {
-      name: "PublicationWorkflow",
-      Component: () => <div>Hello in PublicationWorkflow</div>,
-    });
-    app.injectContentManagerComponent("editView", "right-links", {
-      name: "PreviewButton",
-      Component: () => <div>Hello in PreviewButton</div>,
-    });
-    app.injectContentManagerComponent("editView", "right-links", {
-      name: "TweetButton",
-      Component: () => <div>Hello in TweetButton</div>,
-    });
-  },
 };
